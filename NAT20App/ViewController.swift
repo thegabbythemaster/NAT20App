@@ -9,22 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var diceImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-
-    @IBAction func rollButtonAction(_ sender: Any) {
-        //generate random number between 1-6
         let rolledNumber = Int.random(in: 1...6)
-        
-        //show the image for the dice in imageview according to rolled number
         diceImage.image = UIImage(named: "d6-\(rolledNumber)")
         
-        //roll animation
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapGeasture))
+        
+        diceImage.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func tapGeasture(){
+        let rolledNumber = Int.random(in: 1...6)
+        diceImage.image = UIImage(named: "d6-\(rolledNumber)")
+        
         UIView.transition(with: diceImage, duration: 0.5, options: .transitionCurlDown, animations: nil, completion: nil)
     }
     
