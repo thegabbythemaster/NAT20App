@@ -15,6 +15,7 @@
 		4219A60926F3D2DF001A7E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4219A60726F3D2DF001A7E30 /* LaunchScreen.storyboard */; };
 		4219A61426F3D2DF001A7E30 /* NAT20AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A61326F3D2DF001A7E30 /* NAT20AppTests.swift */; };
 		4219A61F26F3D2DF001A7E30 /* NAT20AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A61E26F3D2DF001A7E30 /* NAT20AppUITests.swift */; };
+		42417D4526F927F4005A3795 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42417D4426F927F4005A3795 /* GradientBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4219A61A26F3D2DF001A7E30 /* NAT20AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAT20AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4219A61E26F3D2DF001A7E30 /* NAT20AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAT20AppUITests.swift; sourceTree = "<group>"; };
 		4219A62026F3D2DF001A7E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42417D4426F927F4005A3795 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4219A60526F3D2DF001A7E30 /* Assets.xcassets */,
 				4219A60726F3D2DF001A7E30 /* LaunchScreen.storyboard */,
 				4219A60A26F3D2DF001A7E30 /* Info.plist */,
+				42417D4426F927F4005A3795 /* GradientBackground.swift */,
 			);
 			path = NAT20App;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4219A60126F3D2DD001A7E30 /* ViewController.swift in Sources */,
+				42417D4526F927F4005A3795 /* GradientBackground.swift in Sources */,
 				4219A5FD26F3D2DD001A7E30 /* AppDelegate.swift in Sources */,
 				4219A5FF26F3D2DD001A7E30 /* SceneDelegate.swift in Sources */,
 			);
