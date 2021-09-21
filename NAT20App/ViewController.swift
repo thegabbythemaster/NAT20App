@@ -15,6 +15,10 @@ class ViewController: UIViewController, MenuControllerDelegate {
     
     private var sideMenu: SideMenuNavigationController?
     
+    //Child Controllers
+    private let D4Controller = D4ViewController()
+    private let D8Controller = D8ViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,6 +35,26 @@ class ViewController: UIViewController, MenuControllerDelegate {
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapGeasture))
         diceImage.addGestureRecognizer(tapGesture)
+        
+        addChildControllers()
+    }
+    //added Child controllers
+    private func addChildControllers() {
+        addChild(D4Controller)
+        addChild(D8Controller)
+        
+        view.addSubview(D4Controller.view)
+        view.addSubview(D8Controller.view)
+         
+        D4Controller.view.frame = view.bounds
+        D8Controller.view.frame = view.bounds
+        
+        D4Controller.didMove(toParent: self)
+        D8Controller.didMove(toParent: self)
+        
+        D4Controller.view.isHidden = true
+        D8Controller.view.isHidden = true
+        
     }
     @IBAction func didTapMenu (){
         present(sideMenu!, animated: true)
@@ -38,25 +62,40 @@ class ViewController: UIViewController, MenuControllerDelegate {
     
     func didSelectMenuItem(named: String) {
         sideMenu?.dismiss(animated: true, completion: { [weak self] in
+            self?.title = named
             if named == "D4" {
+                self?.D4Controller.view.isHidden = false
+                self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d4-1")
             }
             else if named == "D6" {
+                self?.D4Controller.view.isHidden = true
+                self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d6-1")
             }
             else if named == "D8" {
+                self?.D4Controller.view.isHidden = true
+                self?.D8Controller.view.isHidden = false
                 self?.diceImage.image = UIImage(named: "d8-1")
             }
             else if named == "D10" {
+                self?.D4Controller.view.isHidden = false
+                self?.D8Controller.view.isHidden = false
                 self?.diceImage.image = UIImage(named: "d10-1")
             }
             else if named == "D10%" {
+                self?.D4Controller.view.isHidden = true
+                self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d10%-1")
             }
             else if named == "D12" {
+                self?.D4Controller.view.isHidden = true
+                self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d12-1")
             }
             else if named == "D20" {
+                self?.D4Controller.view.isHidden = true
+                self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d20-1")
             }
         })
