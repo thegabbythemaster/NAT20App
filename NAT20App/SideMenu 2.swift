@@ -8,26 +8,15 @@ import Foundation
 import UIKit
 
 protocol MenuControllerDelegate {
-    func didSelectMenuItem(named: SideMenuItem)
+    func didSelectMenuItem(named: String)
 }
-
-enum SideMenuItem: String, CaseIterable {
-    case d4 = "D4"
-    case d6 = "D6"
-    case d8 = "D8"
-    case d10 = "D10"
-    case d10p = "D10%"
-    case d12 = "D12"
-    case d20 = "D20"
-}
-
 class MenuListController: UITableViewController {
     
     public var delegate: MenuControllerDelegate?
     
-    private let menuItems: [SideMenuItem]
+    private let menuItems: [String]
     
-    init(with menuItems: [SideMenuItem]){
+    init(with menuItems: [String]){
         self.menuItems = menuItems
         super.init(nibName: nil, bundle: nil)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -52,7 +41,7 @@ class MenuListController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = menuItems[indexPath.row].rawValue
+        cell.textLabel?.text = menuItems[indexPath.row]
         cell.textLabel?.textColor = .white
         cell.backgroundColor = sideMenuBackgroundColor
         

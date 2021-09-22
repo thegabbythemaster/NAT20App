@@ -22,7 +22,7 @@ class ViewController: UIViewController, MenuControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let menu = MenuListController(with: ["D4", "D6", "D8","D10", "D%10", "D12", "D20"])
+        let menu = MenuListController(with: SideMenuItem.allCases)
         menu.delegate = self
         
         sideMenu = SideMenuNavigationController(rootViewController: menu)
@@ -52,48 +52,45 @@ class ViewController: UIViewController, MenuControllerDelegate {
         D4Controller.didMove(toParent: self)
         D8Controller.didMove(toParent: self)
         
-        D4Controller.view.isHidden = true
-        D8Controller.view.isHidden = true
+//        D4Controller.view.isHidden = true
+//        D8Controller.view.isHidden = true
         
     }
     @IBAction func didTapMenu (){
         present(sideMenu!, animated: true)
     }
     
-    func didSelectMenuItem(named: String) {
+    func didSelectMenuItem(named: SideMenuItem) {
+        
         sideMenu?.dismiss(animated: true, completion: { [weak self] in
-            self?.title = named
-            if named == "D4" {
+            self?.title = named.rawValue
+            
+            switch named {
+            case .d4:
                 self?.D4Controller.view.isHidden = false
                 self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d4-1")
-            }
-            else if named == "D6" {
+            case .d6:
                 self?.D4Controller.view.isHidden = true
                 self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d6-1")
-            }
-            else if named == "D8" {
+            case .d8:
                 self?.D4Controller.view.isHidden = true
                 self?.D8Controller.view.isHidden = false
                 self?.diceImage.image = UIImage(named: "d8-1")
-            }
-            else if named == "D10" {
+            case .d10:
                 self?.D4Controller.view.isHidden = false
                 self?.D8Controller.view.isHidden = false
                 self?.diceImage.image = UIImage(named: "d10-1")
-            }
-            else if named == "D10%" {
+            case .d10p:
                 self?.D4Controller.view.isHidden = true
                 self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d10%-1")
-            }
-            else if named == "D12" {
+            case .d12:
                 self?.D4Controller.view.isHidden = true
                 self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d12-1")
-            }
-            else if named == "D20" {
+            case .d20:
                 self?.D4Controller.view.isHidden = true
                 self?.D8Controller.view.isHidden = true
                 self?.diceImage.image = UIImage(named: "d20-1")
@@ -105,7 +102,7 @@ class ViewController: UIViewController, MenuControllerDelegate {
         let rolledNumber = Int.random(in: 1...6)
         diceImage.image = UIImage(named: "d6-\(rolledNumber)")
 
-        UIView.transition(with: diceImage, duration: 0.5, options: .transitionCurlDown, animations: nil, completion: nil)
+        UIView.transition(with: diceImage, duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil)
     }
 
 }
