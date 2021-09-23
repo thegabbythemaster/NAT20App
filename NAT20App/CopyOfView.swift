@@ -26,7 +26,7 @@ class CopyOfView: UIViewController, MenuControllerDelegate {
     
     private var sideMenu: SideMenuNavigationController?
     
-    var selectedDice : String = "d6-1"
+    var selectedDice : String = "d6"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,13 +63,15 @@ class CopyOfView: UIViewController, MenuControllerDelegate {
     
     @objc func RollDice(){
         let numberOfFaces = DiceOption[selectedDice]!
-        print(numberOfFaces)
-        print(DiceOption[selectedDice])
         let rolledNumber = Int.random(in: 1...numberOfFaces)
-        print(rolledNumber)
-        diceImage.image = UIImage(named: "d" + selectedDice + "-" + "\(rolledNumber)")
+        let diceImageString = selectedDice + "-" + "\(rolledNumber)"
+        diceImage.image = UIImage(named: diceImageString)
 
-        UIView.transition(with: diceImage, duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        if numberOfFaces == 6{
+            UIView.transition(with: diceImage, duration: 0.5, options: .transitionCurlDown, animations: nil, completion: nil)
+        }
+        else{
+            UIView.transition(with: diceImage, duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        }
     }
-
 }

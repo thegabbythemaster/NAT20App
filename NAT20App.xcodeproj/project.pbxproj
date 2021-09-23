@@ -11,7 +11,6 @@
 		4213D1A326FBC6BA007A9E12 /* CopyOfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4213D1A226FBC6BA007A9E12 /* CopyOfView.swift */; };
 		4219A5FD26F3D2DD001A7E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A5FC26F3D2DD001A7E30 /* AppDelegate.swift */; };
 		4219A5FF26F3D2DD001A7E30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A5FE26F3D2DD001A7E30 /* SceneDelegate.swift */; };
-		4219A60126F3D2DD001A7E30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A60026F3D2DD001A7E30 /* ViewController.swift */; };
 		4219A60426F3D2DD001A7E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4219A60226F3D2DD001A7E30 /* Main.storyboard */; };
 		4219A60626F3D2DF001A7E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4219A60526F3D2DF001A7E30 /* Assets.xcassets */; };
 		4219A60926F3D2DF001A7E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4219A60726F3D2DF001A7E30 /* LaunchScreen.storyboard */; };
@@ -19,8 +18,6 @@
 		4219A61F26F3D2DF001A7E30 /* NAT20AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A61E26F3D2DF001A7E30 /* NAT20AppUITests.swift */; };
 		42EE697926FA8266002D20A8 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE697826FA8266002D20A8 /* GradientBackground.swift */; };
 		42EE697B26FA9B72002D20A8 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE697A26FA9B72002D20A8 /* SideMenu.swift */; };
-		42EE697D26FA9C20002D20A8 /* D4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE697C26FA9C20002D20A8 /* D4ViewController.swift */; };
-		42EE697F26FA9C57002D20A8 /* D8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE697E26FA9C57002D20A8 /* D8ViewController.swift */; };
 		8EDFA5CFE9E25E1D1D300B6B /* Pods_NAT20App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C797C21D48EAA63AD5D3BB5 /* Pods_NAT20App.framework */; };
 		ADA5D2ABB6C2F6AF14000A25 /* Pods_NAT20App_NAT20AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42682E64F17B36A9DBA62495 /* Pods_NAT20App_NAT20AppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +46,6 @@
 		4219A5F926F3D2DD001A7E30 /* NAT20App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NAT20App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4219A5FC26F3D2DD001A7E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4219A5FE26F3D2DD001A7E30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4219A60026F3D2DD001A7E30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4219A60326F3D2DD001A7E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4219A60526F3D2DF001A7E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4219A60826F3D2DF001A7E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,8 +59,6 @@
 		42682E64F17B36A9DBA62495 /* Pods_NAT20App_NAT20AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAT20App_NAT20AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EE697826FA8266002D20A8 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		42EE697A26FA9B72002D20A8 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
-		42EE697C26FA9C20002D20A8 /* D4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D4ViewController.swift; sourceTree = "<group>"; };
-		42EE697E26FA9C57002D20A8 /* D8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D8ViewController.swift; sourceTree = "<group>"; };
 		4A8331F8C9109BB3F89202A3 /* Pods-NAT20App-NAT20AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAT20App-NAT20AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-NAT20App-NAT20AppUITests/Pods-NAT20App-NAT20AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		61B58BA0BAE9FE4E2317C3F6 /* Pods-NAT20AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAT20AppTests.debug.xcconfig"; path = "Target Support Files/Pods-NAT20AppTests/Pods-NAT20AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C797C21D48EAA63AD5D3BB5 /* Pods_NAT20App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAT20App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,15 +122,12 @@
 			children = (
 				4219A5FC26F3D2DD001A7E30 /* AppDelegate.swift */,
 				4219A5FE26F3D2DD001A7E30 /* SceneDelegate.swift */,
-				4219A60026F3D2DD001A7E30 /* ViewController.swift */,
 				4219A60226F3D2DD001A7E30 /* Main.storyboard */,
 				4219A60526F3D2DF001A7E30 /* Assets.xcassets */,
 				4219A60726F3D2DF001A7E30 /* LaunchScreen.storyboard */,
 				4219A60A26F3D2DF001A7E30 /* Info.plist */,
 				42EE697826FA8266002D20A8 /* GradientBackground.swift */,
 				42EE697A26FA9B72002D20A8 /* SideMenu.swift */,
-				42EE697C26FA9C20002D20A8 /* D4ViewController.swift */,
-				42EE697E26FA9C57002D20A8 /* D8ViewController.swift */,
 				4213D1A226FBC6BA007A9E12 /* CopyOfView.swift */,
 			);
 			path = NAT20App;
@@ -421,12 +412,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4219A60126F3D2DD001A7E30 /* ViewController.swift in Sources */,
 				42EE697926FA8266002D20A8 /* GradientBackground.swift in Sources */,
 				42EE697B26FA9B72002D20A8 /* SideMenu.swift in Sources */,
 				4219A5FD26F3D2DD001A7E30 /* AppDelegate.swift in Sources */,
-				42EE697F26FA9C57002D20A8 /* D8ViewController.swift in Sources */,
-				42EE697D26FA9C20002D20A8 /* D4ViewController.swift in Sources */,
 				4213D1A326FBC6BA007A9E12 /* CopyOfView.swift in Sources */,
 				4219A5FF26F3D2DD001A7E30 /* SceneDelegate.swift in Sources */,
 			);

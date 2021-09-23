@@ -18,8 +18,6 @@ class ViewController: UIViewController, MenuControllerDelegate {
     var selectedDice : String = "d6-1"
     
     //Child Controllers
-    private let D4Controller = D4ViewController()
-    private let D8Controller = D8ViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
