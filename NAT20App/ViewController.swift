@@ -15,6 +15,8 @@ class ViewController: UIViewController, MenuControllerDelegate {
     
     private var sideMenu: SideMenuNavigationController?
     
+    var selectedDice : String = "d6-1"
+    
     //Child Controllers
     private let D4Controller = D4ViewController()
     private let D8Controller = D8ViewController()

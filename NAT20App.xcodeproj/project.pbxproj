@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		036381944FB0E5690C59DD5C /* Pods_NAT20AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9953D59B9E6329A12895CA /* Pods_NAT20AppTests.framework */; };
+		4213D1A326FBC6BA007A9E12 /* CopyOfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4213D1A226FBC6BA007A9E12 /* CopyOfView.swift */; };
 		4219A5FD26F3D2DD001A7E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A5FC26F3D2DD001A7E30 /* AppDelegate.swift */; };
 		4219A5FF26F3D2DD001A7E30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A5FE26F3D2DD001A7E30 /* SceneDelegate.swift */; };
 		4219A60126F3D2DD001A7E30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219A60026F3D2DD001A7E30 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1E9953D59B9E6329A12895CA /* Pods_NAT20AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAT20AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EBA5D4CE1CCC3785933BF6 /* Pods-NAT20App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAT20App.debug.xcconfig"; path = "Target Support Files/Pods-NAT20App/Pods-NAT20App.debug.xcconfig"; sourceTree = "<group>"; };
+		4213D1A226FBC6BA007A9E12 /* CopyOfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyOfView.swift; sourceTree = "<group>"; };
 		4219A5F926F3D2DD001A7E30 /* NAT20App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NAT20App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4219A5FC26F3D2DD001A7E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4219A5FE26F3D2DD001A7E30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				42EE697A26FA9B72002D20A8 /* SideMenu.swift */,
 				42EE697C26FA9C20002D20A8 /* D4ViewController.swift */,
 				42EE697E26FA9C57002D20A8 /* D8ViewController.swift */,
+				4213D1A226FBC6BA007A9E12 /* CopyOfView.swift */,
 			);
 			path = NAT20App;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				4219A5FD26F3D2DD001A7E30 /* AppDelegate.swift in Sources */,
 				42EE697F26FA9C57002D20A8 /* D8ViewController.swift in Sources */,
 				42EE697D26FA9C20002D20A8 /* D4ViewController.swift in Sources */,
+				4213D1A326FBC6BA007A9E12 /* CopyOfView.swift in Sources */,
 				4219A5FF26F3D2DD001A7E30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
