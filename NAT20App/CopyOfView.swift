@@ -57,15 +57,24 @@ class CopyOfView: UIViewController, MenuControllerDelegate {
             self?.title = named.rawValue
             self?.selectedDice = named.rawValue.lowercased()
             self?.diceImage.image = UIImage(named: self!.selectedDice + "-1")
-            print("selected")
+            self?.diceLabel.text = named.rawValue + " Die"
+//            print("selected")
         })
     }
     
     @objc func RollDice(){
         let numberOfFaces = DiceOption[selectedDice]!
-        let rolledNumber = Int.random(in: 1...numberOfFaces)
+        var rolledNumber = 0
+        //If d10% is selected, must start at 0 and end at 9
+        if selectedDice == "d10%" {
+            rolledNumber = Int.random(in: 0...(numberOfFaces-1))
+        } else {
+            rolledNumber = Int.random(in: 1...numberOfFaces)
+        }
+//        let rolledNumber = Int.random(in: 1...numberOfFaces)
         let diceImageString = selectedDice + "-" + "\(rolledNumber)"
         diceImage.image = UIImage(named: diceImageString)
+        print("The number is: ", rolledNumber)
 
         if numberOfFaces == 6{
             UIView.transition(with: diceImage, duration: 0.5, options: .transitionCurlDown, animations: nil, completion: nil)
